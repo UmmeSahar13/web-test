@@ -54,3 +54,11 @@ This project serves as a practical exercise to test your DevOps skills. It invol
      - prometheus
      - node_exporter
      - grafana
+    
+     - ## Final Project Completion
+All tasks have been completed on the `devops-branch`:
+- Ansible automation scripts in `/ansible`
+- Docker containerization with `Dockerfile` and `docker-compose.yml`
+- Kubernetes manifests in `/k8s`
+- CI/CD Pipeline configured in `.github/workflows`
+- Monitoring setup in `/monitoring`
