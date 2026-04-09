@@ -1,0 +1,14 @@
+---
+- name: Install basic tools
+  hosts: local
+  become: yes
+  tasks:
+    - name: Make sure Git is installed
+      package:
+        name: git
+        state: present
+
+    - name: Make sure Docker is installed
+      package:
+        name: docker.io
+        state: present
