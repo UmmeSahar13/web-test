@@ -1,0 +1,14 @@
+name: CI-CD-Pipeline
+on:
+  push:
+    branches:
+      - devops-branch
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build Docker Image
+        run: docker build -t my-app .
+      - name: Test Application
+        run: docker run -d -p 8080:80 my-app
